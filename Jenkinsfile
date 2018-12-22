@@ -10,7 +10,7 @@ pipeline {
         }
         stage('') {
           steps {
-            echo 'first 1'
+            echo 'a1'
           }
         }
       }
