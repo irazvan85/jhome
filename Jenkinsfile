@@ -8,9 +8,9 @@ pipeline {
             echo 'first'
           }
         }
-        stage('') {
+        stage('error') {
           steps {
-            echo 'a1'
+            echo 'first 1'
           }
         }
       }
