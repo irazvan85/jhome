@@ -2,13 +2,17 @@ pipeline {
   agent any
   stages {
     stage('first') {
-      steps {
-        echo 'first'
-      }
-    }
-    stage('') {
-      steps {
-        sh 'dir'
+      parallel {
+        stage('first') {
+          steps {
+            echo 'first'
+          }
+        }
+        stage('') {
+          steps {
+            echo 'first 1'
+          }
+        }
       }
     }
   }
