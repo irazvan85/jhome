@@ -6,5 +6,10 @@ pipeline {
         echo 'first'
       }
     }
+    stage('') {
+      steps {
+        sh 'dir'
+      }
+    }
   }
 }
